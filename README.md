@@ -12,14 +12,9 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 
 ## Analysis steps 
 - Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-- Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC  
-- Bacterial genome assembly using Unicycler
-  unicycler -1 <read1.fastq> -2 <read2.fastq> -o <output_directory> -t <threads>
-  -1 <read1.fastq>: Path to your first paired-end read file (forward reads).
-  -2 <read2.fastq>: Path to your second paired-end read file (reverse reads).
-  -o <output_directory>: Directory where you want the output files to be saved.
-  -t <threads>: The number of CPU threads you want to use for the assembly (e.g., 8).
-- Genome quality check and statistics using CheckM and QUAST 
+- Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC version 1.20  
+- Bacterial genome assembly using Unicycler (unicycler -1 short_reads_1.fastq.gz -2 short_reads_2.fastq.gz -o output_dir)
+- Genome quality check and statistics using CheckM v2 and QUality ASsessment Tool (QUAST) 
 - Genome based taxonomy assignment using (GTDB-Tk) and multi-locus typing using PubMLST server (https://pubmlst.org/)
 - Gene prediction using Prokka and annotation of genes among different subsystems utilizing the SEED and RAST servers (https://rast.nmpdr.org/)    
 - Idenitfication of the Antimicrobial Resistant Genes (ARGs) using CARD Database (https://card.mcmaster.ca/)
@@ -28,7 +23,6 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 - Genomic feature visulisation using Proksee server (https://proksee.ca/)
 
 ![Analysis-workflow](https://github.com/user-attachments/assets/719a7353-a246-48ae-8822-2a143f12aa72)
-
 
 ## Genome Analysis and Visualisation in Proksee Server 
 Proksee (https://proksee.ca) provides users with a powerful, easy-to-use, and feature-rich system for assembling, annotating, analysing, and visualizing bacterial genomes. Proksee accepts Illumina sequence reads as compressed FASTQ files or pre-assembled contigs in raw, FASTA, or GenBank format. 
