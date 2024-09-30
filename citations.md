@@ -1,40 +1,38 @@
 ## Citations
 
-## [nf-core](https://pubmed.ncbi.nlm.nih.gov/32055031/)
-
-> Ewels PA, Peltzer A, Fillinger S, Patel H, Alneberg J, Wilm A, Garcia MU, Di Tommaso P, Nahnsen S. The nf-core framework for community-curated bioinformatics pipelines. Nat Biotechnol. 2020 Mar;38(3):276-278. doi: 10.1038/s41587-020-0439-x. PubMed PMID: 32055031.
-
-## [Nextflow](https://pubmed.ncbi.nlm.nih.gov/28398311/)
-
-> Di Tommaso P, Chatzou M, Floden EW, Barja PP, Palumbo E, Notredame C. Nextflow enables reproducible computational workflows. Nat Biotechnol. 2017 Apr 11;35(4):316-319. doi: 10.1038/nbt.3820. PubMed PMID: 28398311.
-
 ## Pipeline tools
 
-- [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-
-- [MultiQC](https://pubmed.ncbi.nlm.nih.gov/27312411/)
-  > Ewels P, Magnusson M, Lundin S, Käller M. MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics. 2016 Oct 1;32(19):3047-8. doi: 10.1093/bioinformatics/btw354. Epub 2016 Jun 16. PubMed PMID: 27312411; PubMed Central PMCID: PMC5039924.
-
-- [Proksee]
-  > Grant, Jason R., et al. "Proksee: in-depth characterization and visualization of bacterial genomes." Nucleic acids research 51.W1 (2023): W484-W492.
-- [FastQC]
+- ## FastQC
   > https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
 
-- [PRINSEQ]
+- ## MultiQC
+  > Ewels P, Magnusson M, Lundin S, Käller M. MultiQC: summarize analysis results for multiple tools and samples in a single report. Bioinformatics. 2016 Oct 1;32(19):3047-8. doi: 10.1093/bioinformatics/btw354. Epub 2016 Jun 16. PubMed PMID: 27312411; PubMed Central PMCID: PMC5039924.
+
+- ## Proksee
+  > Grant, Jason R., et al. "Proksee: in-depth characterization and visualization of bacterial genomes." Nucleic acids research 51.W1 (2023): W484-W492.
+  
+- ## PRINSEQ
   > PReprocessing and INformation of SEQuence data (http://prinseq.sourceforge.net) to preprocess genomic sequence data in FASTA or FASTQ format.
-- [CheckM]
+
+- ## CheckM
   > Parks, Donovan H., et al. "CheckM: assessing the quality of microbial genomes recovered from isolates, single cells, and metagenomes." Genome research 25.7 (2015): 1043-1055.
-- [GTDB-tk]
+
+- ## GTDB-tk
   > Chaumeil, Pierre-Alain, et al. "GTDB-Tk: a toolkit to classify genomes with the Genome Taxonomy Database." (2020): 1925-1927.
-- [PubMLST]
+
+- ## PubMLST
   > Jolley, Keith A., James E. Bray, and Martin CJ Maiden. "Open-access bacterial population genomics: BIGSdb software, the PubMLST. org website and their applications." Wellcome open research 3 (2018).
-- [CARD]
+
+- ## CARD
   > Alcock, Brian P., et al. "CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database." Nucleic acids research 48.D1 (2020): D517-D525.
-- [RAST]
+
+- ## RAST
   > Aziz, Ramy K., et al. "The RAST Server: rapid annotations using subsystems technology." BMC genomics 9 (2008): 1-15. https://rast.nmpdr.org/ 
-- [PHASTER]
+
+- ## PHASTER
   > PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
-- [VFDB] server
+
+- ## VFDB server
   > http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi 
 
 
