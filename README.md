@@ -10,7 +10,7 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 
 ## Analysis steps 
 - Raw sequence quality assessment using FASTQC Toolkit 
-- Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 ( Parameters -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC  
+- Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC  
 - Bacterial genome assembly using Unicycler 
 - Genome quality check and statistics using CheckM and QUAST 
 - Genome based taxonomy assignment using (GTDB-Tk) and multi-locus typing using PubMLST server (https://pubmlst.org/)
