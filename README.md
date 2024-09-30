@@ -17,10 +17,13 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 - Genome quality check and statistics using CheckM and QUAST 
 - Genome based taxonomy assignment using (GTDB-Tk) and multi-locus typing using PubMLST server (https://pubmlst.org/)
 - Gene prediction using Prokka and annotation of genes among different subsystems utilizing the SEED and RAST servers (https://rast.nmpdr.org/)    
-- Idenitfication of the Antimicrobial Resistnant Genes (ARGs) using CARD Database (https://card.mcmaster.ca/)
+- Idenitfication of the Antimicrobial Resistant Genes (ARGs) using CARD Database (https://card.mcmaster.ca/)
 - Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
 - Analysis of virulence factors using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi) 
 - Genomic feature visulisation using Proksee server (https://proksee.ca/)
+
+![Analysis-workflow](https://github.com/user-attachments/assets/719a7353-a246-48ae-8822-2a143f12aa72)
+
 
 ## Genome Analysis and Visualisation in Proksee Server 
 Proksee (https://proksee.ca) provides users with a powerful, easy-to-use, and feature-rich system for assembling, annotating, analysing, and visualizing bacterial genomes. Proksee accepts Illumina sequence reads as compressed FASTQ files or pre-assembled contigs in raw, FASTA, or GenBank format. 
