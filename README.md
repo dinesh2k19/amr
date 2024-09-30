@@ -1,8 +1,6 @@
-## Whole genome sequence (WGS) data analysis pipeline
+## Whole genome sequence (WGS) data analysis workflow
 
 WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy prediciton. The pipeline is built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It uses Docker/Singularity containers making installation trivial and results highly reproducible.
-
-![image](https://github.com/user-attachments/assets/e15f0370-7955-4c5f-a076-ca5d38423f28)
 
 
 ## Poultry manure bacterial isolates
@@ -13,9 +11,14 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 ![GA3](https://github.com/user-attachments/assets/91efe1da-b9bd-497e-ad3e-6c7365913e1e)
 
 ## Analysis steps 
-- Raw sequence quality assessment using FASTQC Toolkit 
+- Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 - Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC  
-- Bacterial genome assembly using Unicycler 
+- Bacterial genome assembly using Unicycler
+  unicycler -1 <read1.fastq> -2 <read2.fastq> -o <output_directory> -t <threads>
+  -1 <read1.fastq>: Path to your first paired-end read file (forward reads).
+  -2 <read2.fastq>: Path to your second paired-end read file (reverse reads).
+  -o <output_directory>: Directory where you want the output files to be saved.
+  -t <threads>: The number of CPU threads you want to use for the assembly (e.g., 8).
 - Genome quality check and statistics using CheckM and QUAST 
 - Genome based taxonomy assignment using (GTDB-Tk) and multi-locus typing using PubMLST server (https://pubmlst.org/)
 - Gene prediction using Prokka and annotation of genes among different subsystems utilizing the SEED and RAST servers (https://rast.nmpdr.org/)    
