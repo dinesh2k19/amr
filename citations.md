@@ -18,7 +18,25 @@
 - [Proksee]
   > Grant, Jason R., et al. "Proksee: in-depth characterization and visualization of bacterial genomes." Nucleic acids research 51.W1 (2023): W484-W492.
 - [FastQC]
-  > https://www.bioinformatics.babraham.ac.uk/projects/fastqc/ 
+  > https://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+
+- [PRINSEQ]
+  > PReprocessing and INformation of SEQuence data (http://prinseq.sourceforge.net) to preprocess genomic sequence data in FASTA or FASTQ format.
+- [CheckM]
+  > Parks, Donovan H., et al. "CheckM: assessing the quality of microbial genomes recovered from isolates, single cells, and metagenomes." Genome research 25.7 (2015): 1043-1055.
+- [GTDB-tk]
+  > Chaumeil, Pierre-Alain, et al. "GTDB-Tk: a toolkit to classify genomes with the Genome Taxonomy Database." (2020): 1925-1927.
+- [PubMLST]
+  > Jolley, Keith A., James E. Bray, and Martin CJ Maiden. "Open-access bacterial population genomics: BIGSdb software, the PubMLST. org website and their applications." Wellcome open research 3 (2018).
+- [CARD]
+  > Alcock, Brian P., et al. "CARD 2020: antibiotic resistome surveillance with the comprehensive antibiotic resistance database." Nucleic acids research 48.D1 (2020): D517-D525.
+- [RAST]
+  > Aziz, Ramy K., et al. "The RAST Server: rapid annotations using subsystems technology." BMC genomics 9 (2008): 1-15. https://rast.nmpdr.org/ 
+- [PHASTER]
+  > PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
+- [VFDB] server
+  > http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi 
+
 
 ## Software packaging/containerisation tools
 
