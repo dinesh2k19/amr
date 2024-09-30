@@ -1,7 +1,9 @@
 ## Whole genome sequence (WGS) data analysis pipeline
 
-WGS Analysis pipeline includes sequence quality checking, quality control, taxonomy assignment, assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy prediciton. The pipeline is built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. 
-It uses Docker/Singularity containers making installation trivial and results highly reproducible.
+WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy prediciton. The pipeline is built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It uses Docker/Singularity containers making installation trivial and results highly reproducible.
+
+![image](https://github.com/user-attachments/assets/e15f0370-7955-4c5f-a076-ca5d38423f28)
+
 
 ## Poultry manure bacterial isolates
 
@@ -26,7 +28,7 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 
 
 ## Genome Analysis and Visualisation in Proksee Server 
-Proksee (https://proksee.ca) provides users with a powerful, easy-to-use, and feature-rich system for assembling, annotating, analysing, and visualizing bacterial genomes. Proksee accepts Illumina sequence reads as compressed FASTQ files or pre-assembled contigs in raw, FASTA, or GenBank format. 
+Proksee (https://proksee.ca) provides users with a powerful, easy-to-use, and feature-rich system for assembling, annotating, analysing, and visualizing bacterial genomes. Proksee accepts Illumina sequence reads as compressed FASTQ files or pre-assembled contigs in raw, FASTA, or GenBank format. The circular genome visualised below incidate the features of selected isolate (BRLT-5) isolated from broiler litter samples: 
 
 ![BRLT5](https://github.com/user-attachments/assets/b77eb200-c45f-4059-9484-baa2de8dbd56)
 
