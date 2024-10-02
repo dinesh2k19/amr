@@ -31,10 +31,23 @@ Proksee (https://proksee.ca) provides users with a powerful, easy-to-use, and fe
 
 ![BRLT5](https://github.com/user-attachments/assets/b77eb200-c45f-4059-9484-baa2de8dbd56)
 
-## Whole genome SNP based phylogentic analysis kSNP v3.0 
-SNP identification and phylogenetic analysis without genome alignment or the requirement for reference genomes (Gardner et. al., 2015). The genomes were analysed using IPGA v1.09 server and tree visulised in the iTOL: Interactive Tree Of Life
+## Whole genome SNP based phylogentic analysis  
+SNP identification and phylogenetic analysis without genome alignment or the requirement for reference genomes (kSNP v3.0; Gardner et. al., 2015). The genomes were analysed using IPGA v1.09 server and tree visulised in the iTOL: Interactive Tree Of Life.
 
 ![kSNP-Phylogeny](https://github.com/user-attachments/assets/9698303c-a67d-4442-97fd-f13a57de4877)
+
+BRLT13	100.00									
+BRLT14	100.00	100.00								
+BRLT15	65.61	65.61	100.00							
+BRLT5	64.43	64.45	65.08	100.00						
+BRLT8	80.32	80.27	65.61	64.49	100.00					
+LYRL1	63.36	63.36	64.28	77.88	63.17	100.00				
+LYRL2	67.38	67.40	67.96	63.83	67.34	62.71	100.00			
+LYRL26	72.60	72.60	65.62	64.48	72.76	63.64	67.62	100.00		
+LYRL28	65.27	64.73	64.28	63.73	64.81	63.01	64.30	65.45	100.00	
+LYRL3	66.05	66.31	78.37	64.81	66.09	63.77	68.45	66.20	63.94	100.00
+	BRLT13	BRLT14	BRLT15	BRLT5	BRLT8	LYRL1	LYRL2	LYRL26	LYRL28	LYRL3
+![image](https://github.com/user-attachments/assets/e25c90dd-667e-450e-9c58-79685c1eae27)
 
 ## Citation
 
