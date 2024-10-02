@@ -4,8 +4,8 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 ## Graphical abstract 
 ![GA3](https://github.com/user-attachments/assets/91efe1da-b9bd-497e-ad3e-6c7365913e1e)
 
-## Whole genome sequence (WGS) data analysis workflow
-WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy prediciton. 
+## Whole genome sequence (WGS) analysis workflow
+WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy predictions. 
 
 ## Analysis steps 
 - Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
@@ -38,4 +38,4 @@ Tripathi, Animesh, Anjali Jaiswal, Dinesh Kumar, Ramesh Pandit, Damer Blake, Fio
 
 ## Raw Data Availaility 
 
-Sequence Information: Accession numbers (PP053433-PP053445) of 16S rDNA nucleotide sequences of selected thirteen poultry litter bacterial isolates used in this study are available in National Centre for Biotechnology Information (NCBI) gene database and the raw reads generated through WGS has been submitted to the NCBI under Sequence Read Archive (SRA) submission with Bio-project accession number PRJNA1058239.
+Sequence Information: Accession numbers (PP053433-PP053445) of 16S rDNA nucleotide sequences of selected poultry litter bacterial isolates used in this study are available in National Centre for Biotechnology Information (NCBI) gene database and the raw reads generated through WGS has been submitted to the NCBI under Sequence Read Archive (SRA) submission with Bio-project accession number PRJNA1058239.
