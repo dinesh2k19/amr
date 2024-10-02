@@ -31,6 +31,10 @@ Proksee (https://proksee.ca) provides users with a powerful, easy-to-use, and fe
 
 ![BRLT5](https://github.com/user-attachments/assets/b77eb200-c45f-4059-9484-baa2de8dbd56)
 
+## Whole genome SNP based phylogentic analysis kSNP v3.0 
+SNP identification and phylogenetic analysis without genome alignment or the requirement for reference genomes (Gardner et. al., 2015). The genomes were analysed using IPGA v1.09 server and tree visulised in the iTOL: Interactive Tree Of Life
+
+![kSNP-Phylogeny](https://github.com/user-attachments/assets/9698303c-a67d-4442-97fd-f13a57de4877)
 
 ## Citation
 
