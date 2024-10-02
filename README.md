@@ -1,14 +1,16 @@
-## Whole genome sequence (WGS) data analysis workflow
-
-WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy prediciton. The pipeline is built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It uses Docker/Singularity containers making installation trivial and results highly reproducible.
-
-
 ## Poultry manure bacterial isolates
-
 Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry litter and bacteria harbouring them may provide insights into the potentiality of gene transmission into microbial communities of humans and opportunistic pathogens, highlighting the significance of a One-Health approach that considers the intricate relationships between humans, animals, and environmental health. The outcomes provide insights into the interaction of genes, phenotypes, and environmental variables in forming AMR profiles in poultry contexts, which has implications for agricultural settings and public health. 
 
 ## Graphical abstract 
 ![GA3](https://github.com/user-attachments/assets/91efe1da-b9bd-497e-ad3e-6c7365913e1e)
+
+## Whole genome sequence (WGS) data analysis workflow
+WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy prediciton. The pipeline is built using Nextflow, a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It uses Docker/Singularity containers making installation trivial and results highly reproducible.
+
+## Taxonomic identification using 16S ribosomal RNA gene sequencing 
+MEGA 11 (Version 11.0.13) was employed for multiple sequence alignment, while the phylogenetic investigation was done using a maximum likelihood approach with 1000 bootstrap replicates. Using the iTOL server, aligned sequences were subsequently utilized to generate a circular phylogenetic tree (https://itol.embl.de/).
+
+## All 16S rRNA gene sequences have been submitted to the NCBI public repository (GenBank Accession numbers PP053433-PP053445)
 
 ## Analysis steps 
 - Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
