@@ -18,7 +18,7 @@ WGS Analysis workflow includes sequence quality checking, quality control, taxon
 - Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
 - Analysis of virulence factors using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi) 
 - Genomic feature visulisation using Proksee server (https://proksee.ca/)
-
+## Schematic
 ![Analysis-workflow](https://github.com/user-attachments/assets/c7b03cf9-e40c-4536-87d9-ee387682a003)
 
 ## Taxonomic identification using 16S ribosomal RNA gene sequencing 
