@@ -17,7 +17,7 @@ WGS Analysis workflow includes sequence quality checking, quality control, taxon
 - Idenitfication of the Antimicrobial Resistant Genes (ARGs) using Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/)
 - Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
 - Analysis of virulence factors using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi) 
-- Genomic feature visulisation using Proksee server (https://proksee.ca/)
+- Genomic feature visulisation using Proksee server (https://proksee.ca/). Proksee is a suite of command line tools for performing assembly and evaluation of microbial genomes.
 ## Schematic
 ![Analysis-workflow](https://github.com/user-attachments/assets/c7b03cf9-e40c-4536-87d9-ee387682a003)
 
