@@ -11,13 +11,14 @@ WGS Analysis workflow includes sequence quality checking, quality control, taxon
 - Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 - Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC version 1.20  
 - Illumina Paired-end trimmed and filtered reads were assembled using Unicycler with the command line options at local server (unicycler -1 filt_reads_R1.fastq.gz -2 filt_reads_R2.fastq.gz -o output_dir). Unicycler is an assembly pipeline for bacterial genomes.
-- Genome quality check and statistics using CheckM v2 and QUality ASsessment Tool (QUAST) 
+- Genome quality check and statistics using CheckM v2 and QUality ASsessment Tool (QUAST) v5.0.2 
 - Genome based taxonomy assignment using (GTDB-Tk) and multi-locus sequence typing (MLST) using PubMLST server (https://pubmlst.org/)
 - Gene prediction using Prokka and annotation of genes among different subsystems utilizing the SEED Servers (http://www.theseed.org/servers) and Rapid Annotation using Subsystem Technology (RAST) Server (https://rast.nmpdr.org/)    
 - Idenitfication of the Antimicrobial Resistant Genes (ARGs) using Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/)
 - Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
 - Analysis of virulence factors using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi) 
 - Genomic feature visulisation using Proksee server (https://proksee.ca/). Proksee is a suite of command line tools for performing assembly and evaluation of microbial genomes.
+  
 ## Schematic
 ![Analysis-workflow](https://github.com/user-attachments/assets/c7b03cf9-e40c-4536-87d9-ee387682a003)
 
