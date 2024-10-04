@@ -1,4 +1,4 @@
-## Citations
+## Please cite the following primary sources and databases
 
 ## Pipeline tools
 
@@ -50,6 +50,20 @@
 - ## eggNOG-mapper v2
   > Cantalapiedra CP, Hernández-Plaza A, Letunic I, Bork P, Huerta-Cepas J. eggNOG-mapper v2: Functional annotation, orthology assignments, and domain prediction at the metagenomic scale. Mol Biol Evol 2021;38:5825–9. doi: 10.1093/molbev/msab293.
 
+## Tools
+- tRNAscan-SE 2.0 https://doi.org/10.1093/nar/gkab688
+- Aragorn https://doi.org/10.1093/nar/gkh152
+- Diamond https://doi.org/10.1038/s41592-021-01101-x
+- BLAST+ https://doi.org/10.1186/1471-2105-10-421
+- HMMER https://doi.org/10.1371/journal.pcbi.1002195
+
+## Databases
+- UniProt: https://doi.org/10.1093/nar/gky1049
+- RefSeq: https://doi.org/10.1093/nar/gkx1068
+- COG: https://doi.org/10.1093/bib/bbx117
+- KEGG: https://doi.org/10.1093/bioinformatics/btz859
+- Pfam: https://doi.org/10.1093/nar/gky995
+- VFDB: https://doi.org/10.1093/nar/gky1080
 
 ## Software packaging/containerisation tools
 
