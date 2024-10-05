@@ -17,6 +17,7 @@ WGS Analysis workflow includes sequence quality checking, quality control, taxon
 - Idenitfication of the Antimicrobial Resistant Genes (ARGs) using Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/)
 - Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
 - Analysis of virulence factors using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi)
+- Analysis of Integrative and conjugative elements (ICEs), integrative and mobilizable elements (IMEs), and cis-mobilizable elements (CIMEs) using ICEfinder (https://bioinfo-mml.sjtu.edu.cn/ICEfinder/ICEfinder.html) for the detection of ICEs/IMEs of bacterial genomes.
 - The heavy metal resistant genes (HMRGs) were analysed using the Hidden Markov models (HMMs) profile protein family (PF13801: Heavy-metal resistance) https://www.ebi.ac.uk/interpro/entry/pfam/PF13801/ 
 - Genomic feature visulisation using Proksee server (https://proksee.ca/). Proksee is a suite of command line tools for performing assembly and evaluation of microbial genomes.
   
