@@ -38,7 +38,7 @@ Proksee (https://proksee.ca) provides users with a powerful, easy-to-use, and fe
 
 ## Citation
 
-Tripathi, Animesh, Anjali Jaiswal, Dinesh Kumar, Ramesh Pandit, Damer Blake, Fiona Tomley, Madhvi Joshi, Chaitanya G. Joshi, and Suresh Kumar Dubey. "Release of antimicrobial resistance genes from poultry manure into agro-ecosystems assessed using bacterial genome sequencing.
+Tripathi, Animesh, Anjali Jaiswal, Dinesh Kumar, Ramesh Pandit, Damer Blake, Fiona Tomley, Madhvi Joshi, Chaitanya G. Joshi, and Suresh Kumar Dubey. "High occurrence of antimicrobial resistance genes in bacteria isolated from poultry manure assessed using bacterial genome sequencing.
 
 ## Raw Data Availaility 
 
