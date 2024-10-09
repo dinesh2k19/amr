@@ -3,7 +3,7 @@
 
 - Hannah-Marie Martiny, Nikiforos Pyrounakis, Oksana Lukjančenko, Thomas N. Petersen, Frank M. Aarestrup, Philip T.L.C. Clausen, & Patrick Munk. (2023). PanRes - Collection of antimicrobial resistance genes (1.0.1) [Data set]. Zenodo. https://doi.org/10.5281/zenodo.10091602
 
-- PFAM: Heavy metal resistance protein family (PF13801): https://www.ebi.ac.uk/interpro/entry/pfam/PF13801/
+- PFAM: Heavy metal resistance protein family (PF13801): https://www.ebi.ac.uk/interpro/entry/pfam/PF13801/ (Data retrieved on 04/10/2024)
 
 ## BacMet (version 2.0) (11 March 2018)
 - BacMet2 Experimentally confirmed resistance genes (753 resistance genes, FASTA format): http://bacmet.biomedicine.gu.se/download/BacMet2_EXP_database.fasta
