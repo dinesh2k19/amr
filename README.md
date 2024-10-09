@@ -43,3 +43,7 @@ Tripathi, Animesh, Anjali Jaiswal, Dinesh Kumar, Ramesh Pandit, Damer Blake, Fio
 ## Raw Data Availaility 
 
 Sequence Information: Accession numbers (PP053433-PP053445) of 16S rDNA nucleotide sequences of selected poultry litter bacterial isolates used in this study are available in National Centre for Biotechnology Information (NCBI) gene database and the raw reads generated through WGS has been submitted to the NCBI under Sequence Read Archive (SRA) submission with Bio-project accession number PRJNA1058239.
+
+## Funding Information
+
+This research work was supported by Gujarat Biotechnology Research Centre (GBRC), Department of Science and Technology (DST), Government of Gujarat, Gandhinagar, India. Authors would like to gratefully acknowledge the UKRI-GCRF One Health Poultry Hub (OHPH), UK for supporting research activity. Department of Biotechnology (DBT), Government of India, New Delhi gratefully acknowledged for financial assistance to Animesh Tripathi in the form of Junior Research Fellow (DBTHRDPMU/JRF/BET-20/2020/AL/293).
