@@ -37,7 +37,7 @@ Proksee (https://proksee.ca) provides users with a powerful, easy-to-use, and fe
 
 ## Raw Data Availaility 
 
-Accession numbers (PP053433-PP053445) of 16S rRNA nucleotide sequences of selected poultry litter bacterial isolates used in this study are available in National Centre for Biotechnology Information (NCBI) gene database and the raw reads generated through WGS has been submitted to the NCBI under Sequence Read Archive (SRA) submission with Bio-project accession number PRJNA1058239.
+Accession numbers (PP053433-PP053445) of 16S rRNA nucleotide sequences of selected poultry litter bacterial isolates used in this study are available in National Centre for Biotechnology Information (NCBI) database and the raw reads generated through WGS has been submitted to the NCBI under Sequence Read Archive (SRA) submission with Bio-project accession number PRJNA1058239.
 
 ## Funding Information
 
