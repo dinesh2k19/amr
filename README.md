@@ -5,14 +5,14 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 ![GA3](https://github.com/user-attachments/assets/91efe1da-b9bd-497e-ad3e-6c7365913e1e)
 
 ## Whole genome sequence (WGS) analysis workflow
-WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy predictions. 
+-- WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy predictions. 
 
 ## Setup Conda Environment for workflow management
-Miniconda is a lightweight version of Anaconda that includes only Conda and its dependencies. If you need a full package, install Anaconda instead of Miniconda. For detailed instructions, please refer to https://docs.anaconda.com/anaconda/install/ 
+-- Miniconda is a lightweight version of Anaconda that includes only Conda and its dependencies. If you need a full package, install Anaconda instead of Miniconda. For detailed instructions, please refer to https://docs.anaconda.com/anaconda/install/ 
 
 ## Analysis steps 
-## Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-## To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
+-- Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+-- To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
 
 ```bash
 $ conda create -n env_amr -c bioconda fastqc
