@@ -12,7 +12,7 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 
 ## Analysis steps 
 - Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
- To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
+- To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
 
 ```bash
 $ conda create -n env_amr -c bioconda fastqc
