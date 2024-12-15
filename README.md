@@ -8,13 +8,11 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy predictions. 
 
 ## Setup Conda Environment for workflow management
-
 Miniconda is a lightweight version of Anaconda that includes only Conda and its dependencies. If you need a full package, install Anaconda instead of Miniconda. For detailed instructions, please refer to https://docs.anaconda.com/anaconda/install/ 
 
 ## Analysis steps 
-- Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-
-- To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
+## Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+## To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
 
 ```bash
 $ conda create -n env_amr -c bioconda fastqc
@@ -28,32 +26,46 @@ $ conda activate env_amr
 $ fastqc -o ./fastqc_output -t 64 ./data/Sample1_R1.fastq ./data/Sample1_R2.fastq
 ```
  
-- Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC version 1.20  
-
-# Adapter trimming and filtering with PrinSeq-Lite 
-```bash
+## Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 and reports using MultiQC version 1.20  
+ ```bash
 $ perl prinseq-lite.pl -fastq Sample1_R1.fastq -fastq2 Sample1_R2.fastq -min_qual_mean 30 -min_len 50 -ns_max_n 0
 ```
-
-# Generate MultiQC report
+- Generate MultiQC report
 ```bash
 $ multiqc ./ -o multiqc_report/
 ```
-
+## Genome Assembly
 - Illumina Paired-end trimmed and filtered reads were assembled using Unicycler with the command line options at local server. Unicycler is an assembly pipeline for bacterial genomes.
 ```bash
 $ unicycler -1 filt_reads_R1.fastq.gz -2 filt_reads_R2.fastq.gz -o output_dir --assembly_method bold
 ```
-- Genome quality check and statistics using CheckM v2 and QUality ASsessment Tool (QUAST) v5.0.2 
-- Genome based taxonomy assignment using (GTDB-Tk) and multi-locus sequence typing (MLST) using PubMLST server (https://pubmlst.org/)
-- Gene prediction using Prokka and annotation of genes among different subsystems utilizing the SEED Servers (http://www.theseed.org/servers) and Rapid Annotation using Subsystem Technology (RAST) Server (https://rast.nmpdr.org/) and eggNOG-mapper v2 assisted with precomputed eggNOG v5.0 clusters.      
-- Idenitfication of the Antimicrobial Resistant Genes (ARGs) using Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/)
-- Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
-- Analysis of virulence factors using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi)
-- Analysis of Integrative and conjugative elements (ICEs), integrative and mobilizable elements (IMEs), and cis-mobilizable elements (CIMEs) using ICEfinder (https://bioinfo-mml.sjtu.edu.cn/ICEfinder/ICEfinder.html) for the detection of ICEs/IMEs of bacterial genomes.
-- The heavy metal resistant genes (HMRGs) were analysed using the Hidden Markov models (HMMs) profile protein family (PF13801: Heavy-metal resistance) https://www.ebi.ac.uk/interpro/entry/pfam/PF13801/ 
-- Genomic feature visulisation using Proksee server (https://proksee.ca/). Proksee is a suite of command line tools for performing assembly and evaluation of microbial genomes.
-  
+## Genome quality check and statistics using CheckM v2 and QUality ASsessment Tool (QUAST) v5.0.2 
+
+
+## Genome based taxonomy assignment using (GTDB-Tk) and multi-locus sequence typing (MLST) using PubMLST server (https://pubmlst.org/)
+
+
+## Gene prediction using Prokka and annotation of genes among different subsystems utilizing the SEED Servers (http://www.theseed.org/servers) and Rapid Annotation using Subsystem Technology (RAST) Server (https://rast.nmpdr.org/) and eggNOG-mapper v2 assisted with precomputed eggNOG v5.0 clusters.      
+
+
+## Idenitfication of the Antimicrobial Resistant Genes (ARGs) using Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/)
+
+
+## Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
+
+
+## Analysis of virulence factors using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi)
+
+
+## Analysis of Integrative and conjugative elements (ICEs), integrative and mobilizable elements (IMEs), and cis-mobilizable elements (CIMEs) using ICEfinder (https://bioinfo-mml.sjtu.edu.cn/ICEfinder/ICEfinder.html) for the detection of ICEs/IMEs of bacterial genomes.
+
+
+## The heavy metal resistant genes (HMRGs) were analysed using the Hidden Markov models (HMMs) profile protein family (PF13801: Heavy-metal resistance) https://www.ebi.ac.uk/interpro/entry/pfam/PF13801/ 
+
+
+## Genomic feature visulisation using Proksee server (https://proksee.ca/). Proksee is a suite of command line tools for performing assembly and evaluation of microbial genomes.
+
+
 ## Schematic
 ![Analysis-workflow](https://github.com/user-attachments/assets/c7b03cf9-e40c-4536-87d9-ee387682a003)
 
