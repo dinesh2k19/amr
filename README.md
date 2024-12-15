@@ -14,7 +14,7 @@ Miniconda is a lightweight version of Anaconda that includes only Conda and its 
 ## Analysis steps 
 - Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
 
-To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
+- To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
 
 ```bash
 $ conda create -n env_amr -c bioconda fastqc
@@ -30,8 +30,20 @@ $ fastqc -o ./fastqc_output -t 64 ./data/Sample1_R1.fastq ./data/Sample1_R2.fast
  
 - Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC version 1.20  
 
+# Adapter trimming and filtering with PrinSeq-Lite 
+```bash
+$ perl prinseq-lite.pl -fastq Sample1_R1.fastq -fastq2 Sample1_R2.fastq -min_qual_mean 30 -min_len 50 -ns_max_n 0
+```
 
-- Illumina Paired-end trimmed and filtered reads were assembled using Unicycler with the command line options at local server (unicycler -1 filt_reads_R1.fastq.gz -2 filt_reads_R2.fastq.gz -o output_dir). Unicycler is an assembly pipeline for bacterial genomes.
+# Generate MultiQC report
+```bash
+$ multiqc ./ -o multiqc_report/
+```
+
+- Illumina Paired-end trimmed and filtered reads were assembled using Unicycler with the command line options at local server. Unicycler is an assembly pipeline for bacterial genomes.
+```bash
+$ unicycler -1 filt_reads_R1.fastq.gz -2 filt_reads_R2.fastq.gz -o output_dir --assembly_method bold
+```
 - Genome quality check and statistics using CheckM v2 and QUality ASsessment Tool (QUAST) v5.0.2 
 - Genome based taxonomy assignment using (GTDB-Tk) and multi-locus sequence typing (MLST) using PubMLST server (https://pubmlst.org/)
 - Gene prediction using Prokka and annotation of genes among different subsystems utilizing the SEED Servers (http://www.theseed.org/servers) and Rapid Annotation using Subsystem Technology (RAST) Server (https://rast.nmpdr.org/) and eggNOG-mapper v2 assisted with precomputed eggNOG v5.0 clusters.      
