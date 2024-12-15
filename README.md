@@ -27,10 +27,13 @@ $ fastqc -o ./fastqc_output -t 64 ./data/Sample1_R1.fastq ./data/Sample1_R2.fast
 ```
  
 ## Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 and reports using MultiQC version 1.20  
- ```bash
+```bash
 $ perl prinseq-lite.pl -fastq Sample1_R1.fastq -fastq2 Sample1_R2.fastq -min_qual_mean 30 -min_len 50 -ns_max_n 0
 ```
-- Generate MultiQC report
+```bash
+$ fastp -i Sample1_R1.fastq.gz -I Sample1_R2.fastq.gz -o S1_clean_R1.fastq.gz -O S1_clean_R2.fastq.gz -h S1_fastp_report.html -j S1_fastp_report.json --low_complexity_filter --cut_mean_quality 30 --min_length 50 --thread 16
+```
+## Generate MultiQC report
 ```bash
 $ multiqc ./ -o multiqc_report/
 ```
@@ -56,11 +59,11 @@ $ quast -i genome_dir/assembly.fasta -o quast_report/ --threads 64 --m bacterial
 $ gtdbtk classify_wf --genome_dir genome_dir/ --output_dir gtdbtk_report/ --cpus 64 
 ```
 
-## Gene prediction using Prokka and annotation of genes among different subsystems utilizing the SEED Servers (http://www.theseed.org/servers) and Rapid Annotation using Subsystem Technology (RAST) Server (https://rast.nmpdr.org/) and eggNOG-mapper v2 assisted with precomputed eggNOG v5.0 clusters.      
+## Gene prediction using Prokka and annotation 
+- Different subsystems utilizing the SEED Servers (http://www.theseed.org/servers) and Rapid Annotation using Subsystem Technology (RAST) Server (https://rast.nmpdr.org/) and eggNOG-mapper v2 assisted with precomputed eggNOG v5.0 clusters were used to perform functional annotation.       
 
-
-## Idenitfication of the Antimicrobial Resistant Genes (ARGs) using Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/)
-
+## Idenitfication of the Antimicrobial Resistant Genes (ARGs) 
+- Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/) server was used for the identification of the ARGs from the respective bacterial genome assemblies. 
 
 ## Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
 
