@@ -18,15 +18,17 @@ To create an environment named ` env_amr` and install FASTQC and execute the `An
 
 ```bash
 $ conda create -n env_amr -c bioconda fastqc
+```
 
 ```bash
 $ conda activate env_amr
+```
 
 ```bash
 $ fastqc -o ./fastqc_output -t 64 ./data/Sample1_R1.fastq ./data/Sample1_R2.fastq
-
+```
  
-## Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC version 1.20  
+- Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC version 1.20  
 
 
 - Illumina Paired-end trimmed and filtered reads were assembled using Unicycler with the command line options at local server (unicycler -1 filt_reads_R1.fastq.gz -2 filt_reads_R2.fastq.gz -o output_dir). Unicycler is an assembly pipeline for bacterial genomes.
