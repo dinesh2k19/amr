@@ -10,10 +10,9 @@ Comprehending the existence of Antimicrobial Resistant Genes (ARGs) in poultry l
 ## Setup Conda Environment for workflow management
 - Miniconda is a lightweight version of Anaconda that includes only Conda and its dependencies. If you need a full package, install Anaconda instead of Miniconda. For detailed instructions, please refer to https://docs.anaconda.com/anaconda/install/ 
 
-## Analysis steps 
+## Analysis workflow steps 
+- We created a conda environment named `env_amr` and installed all the required packages in this environment to execute the analysis workflow steps as per following commands. 
 - Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
-- To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
-
 ```bash
 $ conda create -n env_amr -c bioconda fastqc
 ```
@@ -40,10 +39,10 @@ $ multiqc ./ -o multiqc_report/
 $ unicycler -1 filt_reads_R1.fastq.gz -2 filt_reads_R2.fastq.gz -o output_dir --assembly_method bold
 ```
 ## Genome quality check and statistics using CheckM v2 and QUality ASsessment Tool (QUAST) v5.0.2 
-
+- We obtained the genomic assembly statistics using CheckM v2 for all the samples and obtained the QUAST reports
 
 ## Genome based taxonomy assignment using (GTDB-Tk) and multi-locus sequence typing (MLST) using PubMLST server (https://pubmlst.org/)
-
+- The bacterial genomes were assigned taxonomy using Genome based taxonomy database online server and processed for the multi-locus strain typing by PubMLST server.  
 
 ## Gene prediction using Prokka and annotation of genes among different subsystems utilizing the SEED Servers (http://www.theseed.org/servers) and Rapid Annotation using Subsystem Technology (RAST) Server (https://rast.nmpdr.org/) and eggNOG-mapper v2 assisted with precomputed eggNOG v5.0 clusters.      
 
