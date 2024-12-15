@@ -13,14 +13,18 @@ Miniconda is a lightweight version of Anaconda that includes only Conda and its 
 
 ## Analysis steps 
 - Raw sequence quality assessment using FASTQC Toolkit (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)
+
 To create an environment named ` env_amr` and install FASTQC and execute the `Analysis workflow steps`, use the following commands:
 
 ```bash
 $ conda create -n env_amr -c bioconda fastqc
 $ conda activate env_amr
+$ fastqc -o ./fastqc_output -t 64 ./data/Sample1_R1.fastq ./data/Sample1_R2.fastq
 
-  
+ 
 - Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 (Parameters: -min_qual_mean 30 --min_len 50 -ns_max_n 0) and reports using MultiQC version 1.20  
+
+
 - Illumina Paired-end trimmed and filtered reads were assembled using Unicycler with the command line options at local server (unicycler -1 filt_reads_R1.fastq.gz -2 filt_reads_R2.fastq.gz -o output_dir). Unicycler is an assembly pipeline for bacterial genomes.
 - Genome quality check and statistics using CheckM v2 and QUality ASsessment Tool (QUAST) v5.0.2 
 - Genome based taxonomy assignment using (GTDB-Tk) and multi-locus sequence typing (MLST) using PubMLST server (https://pubmlst.org/)
