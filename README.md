@@ -58,25 +58,26 @@ $ quast -i genome_dir/assembly.fasta -o quast_report/ --threads 64 --m bacterial
 ```bash
 $ gtdbtk classify_wf --genome_dir genome_dir/ --output_dir gtdbtk_report/ --cpus 64 
 ```
-
 ## Gene prediction using Prokka and annotation 
 - Subsystems utilizing the SEED Servers (http://www.theseed.org/servers) and Rapid Annotation using Subsystem Technology (RAST) Server (https://rast.nmpdr.org/) and eggNOG-mapper v2 assisted with precomputed eggNOG v5.0 clusters were used to perform functional annotation.       
 
 ## Idenitfication of the Antimicrobial Resistant Genes (ARGs) 
 - The ARGs were identified using the Resistance Gene Identifier (RGI) from respective bacterial genome assembly nucleotide sequences based on homology and SNP models using Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/) 
+
 ## Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/). 
+- PHASTER web server was used for the rapid identification and annotation of prophage sequences within bacterial genome assemblies. 
 
-## Analysis of virulence factors using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi)
+## Analysis of virulence factors 
+- Analysis was performed using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi)
 
+## Analysis of Integrative and conjugative elements (ICEs), integrative and mobilizable elements (IMEs), and cis-mobilizable elements (CIMEs) 
+- ICEfinder server was used (https://bioinfo-mml.sjtu.edu.cn/ICEfinder/ICEfinder.html) for the detection of ICEs/IMEs of bacterial genomes.
 
-## Analysis of Integrative and conjugative elements (ICEs), integrative and mobilizable elements (IMEs), and cis-mobilizable elements (CIMEs) using ICEfinder (https://bioinfo-mml.sjtu.edu.cn/ICEfinder/ICEfinder.html) for the detection of ICEs/IMEs of bacterial genomes.
-
-
-## The heavy metal resistant genes (HMRGs) were analysed using the Hidden Markov models (HMMs) profile protein family (PF13801: Heavy-metal resistance) https://www.ebi.ac.uk/interpro/entry/pfam/PF13801/ 
-
+## The heavy metal resistant genes (HMRGs) analysis
+- The HMRGs sequences were downloaded to create a custom database and analysed using the Hidden Markov models (HMMs) profile protein family (PF13801: Heavy-metal resistance) https://www.ebi.ac.uk/interpro/entry/pfam/PF13801/
 
 ## Genomic feature visulisation using Proksee server (https://proksee.ca/). Proksee is a suite of command line tools for performing assembly and evaluation of microbial genomes.
-
+- Proksee server system was used for genome assembly, annotation and visualization, featuring interactive circular and linear genome maps for the respective bacterial genome assemblies, and ARGs
 
 ## Schematic
 ![Analysis-workflow](https://github.com/user-attachments/assets/c7b03cf9-e40c-4536-87d9-ee387682a003)
