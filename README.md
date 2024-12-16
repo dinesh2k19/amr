@@ -63,10 +63,8 @@ $ gtdbtk classify_wf --genome_dir genome_dir/ --output_dir gtdbtk_report/ --cpus
 - Subsystems utilizing the SEED Servers (http://www.theseed.org/servers) and Rapid Annotation using Subsystem Technology (RAST) Server (https://rast.nmpdr.org/) and eggNOG-mapper v2 assisted with precomputed eggNOG v5.0 clusters were used to perform functional annotation.       
 
 ## Idenitfication of the Antimicrobial Resistant Genes (ARGs) 
-- Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/) server was used for the identification of the ARGs from the respective bacterial genome assemblies. 
-
-## Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/)
-
+- The ARGs were identified using the Resistance Gene Identifier (RGI) from respective bacterial genome assembly nucleotide sequences based on homology and SNP models using Comprehensive Antibiotic Resistance Database (CARD) (https://card.mcmaster.ca/) 
+## Prediction of phage sequences using PHASTER (PHAge Search Tool Enhanced Release) server (https://phaster.ca/). 
 
 ## Analysis of virulence factors using VFDB server version 2022 (http://www.mgc.ac.cn/cgi-bin/VFs/v5/main.cgi)
 
