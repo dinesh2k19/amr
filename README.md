@@ -23,24 +23,24 @@ $ conda activate env_amr
 ```
 
 ```bash
-$ fastqc -o ./fastqc_output -t 64 ./data/Sample1_R1.fastq ./data/Sample1_R2.fastq
+$ fastqc -o /fastqc_output -t 64 /data/*.fastq.gz
 ```
  
 ## Adapter trimming and low quality filtering using PrinSeq-Lite v0.20.4 and reports using MultiQC version 1.20  
 ```bash
-$ perl prinseq-lite.pl -fastq Sample1_R1.fastq -fastq2 Sample1_R2.fastq -min_qual_mean 30 -min_len 50 -ns_max_n 0
+$ perl prinseq-lite.pl -fastq Sample1_R1.fastq.gz -fastq2 Sample1_R2.fastq.gz -min_qual_mean 30 -min_len 50 -ns_max_n 0
 ```
 ```bash
 $ fastp -i Sample1_R1.fastq.gz -I Sample1_R2.fastq.gz -o S1_clean_R1.fastq.gz -O S1_clean_R2.fastq.gz -h S1_fastp_report.html -j S1_fastp_report.json --low_complexity_filter --cut_mean_quality 30 --min_length 50 --thread 16
 ```
 ## Generate MultiQC report
 ```bash
-$ multiqc ./ -o multiqc_report/
+$ multiqc . -o multiqc_report/
 ```
 ## Genome Assembly
 - Illumina Paired-end trimmed and filtered reads were assembled using Unicycler with the command line options at local server. Unicycler is an assembly pipeline for bacterial genomes.
 ```bash
-$ unicycler -1 filt_reads_R1.fastq.gz -2 filt_reads_R2.fastq.gz -o output_dir --assembly_method bold
+$ unicycler -1 S1_filt_reads_R1.fastq.gz -2 S1_filt_reads_R2.fastq.gz -o output_dir --assembly_method bold
 ```
 ## Genome quality check and statistics using CheckM v2 and QUality ASsessment Tool (QUAST) v5.0.2 
 - We obtained the genomic assembly statistics using CheckM v2 for all the samples and obtained the QUAST reports
