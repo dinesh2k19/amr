@@ -107,3 +107,5 @@ This research work was supported by Gujarat Biotechnology Research Centre (GBRC)
 ## Citation
 
 Tripathi, Animesh, Anjali Jaiswal, Dinesh Kumar, Ramesh Pandit, Damer Blake, Fiona Tomley, Madhvi Joshi, Chaitanya G. Joshi, and Suresh Kumar Dubey. "High occurrence of antimicrobial resistance genes in bacteria isolated from poultry manure assessed using bacterial genome sequencing.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.16024876.svg)](https://doi.org/10.5281/zenodo.16024876)
