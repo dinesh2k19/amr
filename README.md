@@ -11,7 +11,13 @@
 - WGS Analysis workflow includes sequence quality checking, quality control, taxonomy assignment, genome assembly, assembly quality assessment, assembled contig annotation, antimicrobial resistance, and taxonomy predictions. 
 
 ## Setup Conda Environment for workflow management
-- Miniconda is a lightweight version of Anaconda that includes only Conda and its dependencies. If you need a full package, install Anaconda instead of Miniconda. For detailed instructions, please refer to https://docs.anaconda.com/anaconda/install/ 
+- Miniconda is a lightweight version of Anaconda that includes only Conda and its dependencies. If you need a full package, install Anaconda instead of Miniconda. For detailed instructions, please refer to https://docs.anaconda.com/anaconda/install/
+
+```bash
+wget https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-Linux-x86_64.sh
+bash Miniforge3-Linux-x86_64.sh
+conda install mamba -n base -c conda-forge
+```
 
 ## Analysis workflow steps 
 - We created a conda environment named `env_amr` and installed all the required packages, dependencies were installed and configured in this environment to execute the analysis workflow steps as per following commands. 
